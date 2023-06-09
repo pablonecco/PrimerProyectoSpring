@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Degree</title>
+</head>
+<body>
+    <form action="#" th:action="@{newdegree}" th:object="${degree}" method="post">
+      <p>Name: <input type="text" th:field="*{name}"></p>
+      <p>Institution: <input type="text" th:field="*{institution}"></p>
+      <p>Year: <input type="text" th:field="*{year}"></p>
+      <input type="submit"/>
+    </form>
+</body>
+</html>
